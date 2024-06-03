@@ -47,7 +47,7 @@
     cmd: |
       {{ pyenv_dir }} local 3.7.2
 
-- name: Import .sql file
+- name: Import .sql file 
   shell: mysql -uroot < /root/simple-django-project/world.sql 
 
 
@@ -79,7 +79,7 @@
   shell: >
     . ~/.bashrc && pyenv activate test001 && cd /root/simple-django-project
 
-- name: Upgrade pip
+- name: Upgrade pip version to latest
   shell: >
     . ~/.bashrc && pyenv activate test001 && pip install --upgrade pip
   args:
