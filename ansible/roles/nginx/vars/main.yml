@@ -1,0 +1,35 @@
+# ---
+# home_dir: /root
+# pyenv_dir: /root/.pyenv/bin/pyenv
+# venv_name: test001
+
+---
+home_dir: /root
+pyenv_dir: "{{ home_dir }}/.pyenv/bin/pyenv"
+venv_name: test001
+repo_url: "https://github.com/UjjwalBudha/simple-django-project.git"
+project_dir: "{{ home_dir }}/simple-django-project"
+python_version: "3.7.2"
+venv_path: "{{ home_dir }}/.pyenv/versions/{{ python_version }}/envs/{{ venv_name }}"
+common_packages:
+  - nginx
+  - make
+  - build-essential
+  - libssl-dev
+  - zlib1g-dev
+  - libbz2-dev
+  - libreadline-dev
+  - libsqlite3-dev
+  - wget
+  - curl
+  - llvm
+  - libncursesw5-dev
+  - xz-utils
+  - tk-dev
+  - libxml2-dev
+  - libxmlsec1-dev
+  - libffi-dev
+  - liblzma-dev
+  - python3-pip
+  - mysql-server
+  - libmysqlclient-dev
