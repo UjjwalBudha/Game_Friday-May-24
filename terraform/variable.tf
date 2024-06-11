@@ -41,4 +41,3 @@ variable "monitoring" {}
 variable "associate_public_ip_address" {}
 variable "key_name" {}
 variable "name" {}
-variable "bucket_key" {}

@@ -7,12 +7,12 @@
 - name: Configure Nginx reverse proxy
   template:
     src: main.j2
-    dest: {{ available_dir }}
+    dest: "{{ available_dir }}"
   notify: Restart Nginx
 
 - name: Enable reverse proxy configuration
   file:
-    src: {{ available_dir }}
-    dest: {{ enabled_dir }}
+    src: "{{ available_dir }}"
+    dest: "{{ enabled_dir }}"
     state: link
   notify: Restart Nginx

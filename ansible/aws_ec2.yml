@@ -7,3 +7,7 @@ filters:
   "tag:owner": ujwal.budha
 hostnames:
   - instance-id
+
+groups:
+  public_server: "'public' in tags.Name"
+  private_server: "'private' in tags.Name"

@@ -1,5 +1,5 @@
 ---
-- hosts: i-003db8f1004f8f52b
+- hosts: public_server
   gather_facts: true
   become: true
   roles:
@@ -10,7 +10,7 @@
     ansible_aws_ssm_profile: default
     ansible_aws_ssm_timeout: 300
 
-- hosts: i-090b0d4c36dbcc597
+- hosts: private_server
   gather_facts: true
   become: true
   roles:
