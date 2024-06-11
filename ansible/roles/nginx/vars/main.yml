@@ -1,8 +1,3 @@
-# ---
-# home_dir: /root
-# pyenv_dir: /root/.pyenv/bin/pyenv
-# venv_name: test001
-
 ---
 home_dir: /root
 pyenv_dir: "{{ home_dir }}/.pyenv/bin/pyenv"

@@ -7,12 +7,12 @@
 - name: Configure Nginx reverse proxy
   template:
     src: main.j2
-    dest: /etc/nginx/sites-available/reverse_proxy.conf
+    dest: {{ available_dir }}
   notify: Restart Nginx
 
 - name: Enable reverse proxy configuration
   file:
-    src: /etc/nginx/sites-available/reverse_proxy.conf
-    dest: /etc/nginx/sites-enabled/reverse_proxy.conf
+    src: {{ available_dir }}
+    dest: {{ enabled_dir }}
     state: link
   notify: Restart Nginx

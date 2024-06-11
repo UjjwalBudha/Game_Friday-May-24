@@ -1,0 +1,2 @@
+enabled_dir: /etc/nginx/sites-enabled/reverse_proxy.conf
+available_dir: /etc/nginx/sites-available/reverse_proxy.conf
